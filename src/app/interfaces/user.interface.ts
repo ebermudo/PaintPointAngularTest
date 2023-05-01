@@ -8,6 +8,7 @@ export interface User {
     phone: string;
     dateBirthday: Date;
     lastModification: Date;
+    image: string;
     country: string;
     sexDesc: string;
     language: string;

@@ -38,7 +38,8 @@ export class HomePage implements OnInit, OnDestroy{
       return user.name.toLowerCase().startsWith(event.toLowerCase())
       || user.surname.toLowerCase().startsWith(event.toLowerCase())
       || user.surname2.toLowerCase().startsWith(event.toLowerCase())
-      || user.phone.startsWith(event);
+      || user.phone.startsWith(event)
+      || user.sex.startsWith(event);
     });
   }
 }

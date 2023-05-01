@@ -1,4 +1,4 @@
-<ion-modal #modal [isOpen]="isModalOpen">
+<ion-modal #modal mode="ios" [isOpen]="isModalOpen">
   <ng-template>
     <ion-header>
       <ion-toolbar>
@@ -8,37 +8,37 @@
       </ion-toolbar>
     </ion-header>
     <ion-content>
-      <ion-card>
-        <ion-card-header>
+      <ion-card color="secondary">
+        <ion-card-header color="primary">
           <ion-card-title>Información del usuario</ion-card-title>
         </ion-card-header>
-        <ion-card-content>
+        <ion-card-content color="secondary">
           <ion-list>
-            <ion-item>
+            <ion-item lines="none" color="secondary">
               <ion-text slot="start">Nombre: {{this.selectedUser.name}}</ion-text>
             </ion-item>
-            <ion-item>
+            <ion-item lines="none" color="secondary">
               <ion-text slot="start">Apellido: {{this.selectedUser.surname}}</ion-text>
             </ion-item>
-            <ion-item>
+            <ion-item lines="none" color="secondary">
               <ion-text slot="start">Segundo Apellido: {{this.selectedUser.surname2}}</ion-text>
             </ion-item>
-            <ion-item>
+            <ion-item lines="none" color="secondary">
               <ion-text slot="start">Teléfono: {{this.selectedUser.phone}}</ion-text>
             </ion-item>
-            <ion-item>
+            <ion-item lines="none" color="secondary">
               <ion-text slot="start">Fecha de nacimiento: {{this.selectedUser.dateBirthday | date:'dd/MM/yyyy'}}</ion-text>
             </ion-item>
-            <ion-item>
+            <ion-item lines="none" color="secondary">
               <ion-text slot="start">Sexo: {{this.selectedUser.sexDesc}}</ion-text>
             </ion-item>
-            <ion-item>
+            <ion-item lines="none" color="secondary">
               <ion-text slot="start">Pais(No funciona por el nombre de la propiedad del json esta con -): {{this.selectedUser.country}}</ion-text>
             </ion-item>
-            <ion-item>
+            <ion-item lines="none" color="secondary">
               <ion-text slot="start">Idioma(No funciona por el nombre de la propiedad del json esta con -): {{this.selectedUser.language}}</ion-text>
             </ion-item>
-            <ion-item>
+            <ion-item lines="none" color="secondary">
               <ion-text slot="start">Última modificación: {{this.selectedUser.lastModification | date:'dd/MM/yyyy'}}</ion-text>
             </ion-item>
           </ion-list>

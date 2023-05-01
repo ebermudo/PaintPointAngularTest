@@ -25,6 +25,7 @@ export class apiCall {
                 phone: person.phone,
                 dateBirthday: person.datebirthday,
                 lastModification: person.lastModification,
+                image: this.getImageFromUser(person),
                 country: '',
                 language: '',
                 sexDesc: ''
@@ -36,5 +37,13 @@ export class apiCall {
 
   public getDatasource() {
     return this.http.get(environment.apiUrlDataSource);
+  }
+
+  private getImageFromUser(user: User) {
+    switch(user.sex) {
+        case 'M': return environment.imageMale;
+        case "H": return environment.imageFemale;
+        default: return '';
+    }
   }
 }
