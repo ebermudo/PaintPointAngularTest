@@ -17,7 +17,7 @@ export class HomePage implements OnInit, OnDestroy{
   constructor(private apiService: apiCall) {}
 
   ngOnInit(): void {
-      this.apiService.getDatasource()
+      this.userSubscribe = this.apiService.getDatasource()
       .subscribe((data: any) => {
         this.dataSource = data.data;
       });
