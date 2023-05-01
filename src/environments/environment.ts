@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiUrl: 'https://storage.googleapis.com/web-aktios/entrevista-tecnica/info-population.json',
+  apiUrlDataSource: 'https://storage.googleapis.com/web-aktios/entrevista-tecnica/datasource.json'
 };
 
 /*
